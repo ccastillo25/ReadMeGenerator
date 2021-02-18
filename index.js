@@ -9,12 +9,12 @@ const questions = [
  {
     type: "input",
     message: "Describe Project",
-    name: "PrjectDescription",
+    name: "prjectDescription",
  },
  {
     type: "input",
     message: "Step by step of how to install project",
-    name: "InstallInstruction",
+    name: "installInstruction",
  },
  {
     type: "input",
@@ -34,7 +34,7 @@ const questions = [
 {
     type: "input",
     message: "What is License Name",
-    name: "LicenseName",
+    name: "licenseName",
 },
 ];
 
@@ -46,7 +46,18 @@ function captureUserInput(){
 }
 captureUserInput();
 
-//.2 make function to make res into readme generator
+//.2 make function to make res into readme file
+function generateReadMe(projectTitle, res) {
+   fs.generateReadMe(projectTitle, res, err => {
+       if (err) {
+         return console.log(err);
+       }
+     
+       console.log("Success! Your README.md file has been generated")
+   });
+}
+
+const writeFileAsync = util.promisify(writeToFile);
 //.3 use fs to write a readMe.
 //.4 template literal, es6
 
