@@ -45,6 +45,11 @@ function captureUserInput(){
    })
 }
 captureUserInput();
+
+//.2 make function to make res into readme generator
+//.3 use fs to write a readMe.
+//.4 template literal, es6
+
 // console.log('starting');
 // console.log(userResponse);
 // const ProjectTitle = userResponse.ProjectTitle;
