@@ -5,7 +5,7 @@ const generate = require("./assets/generate.js");
 const questions = [
    {
       type: "input",
-      message: "What is the Project Title",
+      message: "What is the Project Title?",
       name: "projectTitle",
    },
    {
@@ -15,7 +15,7 @@ const questions = [
    },
    {
       type: "input",
-      message: "How do you use Project",
+      message: "What is the Project usage?",
       name: "projectUsage",
    },
    {
@@ -26,7 +26,7 @@ const questions = [
    {
       type: "input",
       name: "badge",
-      message: "Please list any badge links for this project: ",
+      message: "Please list any badge links for this project",
    },
    {
       type: "input",
